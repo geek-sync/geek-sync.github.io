@@ -1,1 +1,0 @@
-# geek-sync.github.io
