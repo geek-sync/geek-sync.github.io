@@ -19,7 +19,7 @@ var ref=database.ref('dustbin/')
     var leveldata=data.level
     if(leveldata >= 80){
 	
-	alert("WARNING :Dustbin is AT 80% Its about to FULL!....");
+	alert("WARNING :  Dustbin is about FILL  !!!....");
 	
 	var firebaseSendTime = firebase.database().ref().child("dustbin_history/" + "Full at " + time);
 		firebaseSendTime.set("Full at " + time);
