@@ -17,9 +17,9 @@ var ref=database.ref('dustbin/')
    var data= snapshot.val()
     document.getElementById("dustbin_status").innerHTML = data.level;
     var leveldata=data.level
-    if(leveldata == 100){
+    if(leveldata == 80){
 	
-	alert("Dustbin is FULL!");
+	alert("WARNING :Dustbin is AT 80% Its about to FULL!....");
 	
 	var firebaseSendTime = firebase.database().ref().child("dustbin_history/" + "Full at " + time);
 		firebaseSendTime.set("Full at " + time);
