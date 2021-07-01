@@ -17,7 +17,7 @@ var ref=database.ref('dustbin/')
    var data= snapshot.val()
     document.getElementById("dustbin_status").innerHTML = data.level;
     var leveldata=data.level
-    if(leveldata == 80){
+    if(leveldata >= 80){
 	
 	alert("WARNING :Dustbin is AT 80% Its about to FULL!....");
 	
